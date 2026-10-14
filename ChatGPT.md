@@ -1,6 +1,6 @@
-# How ChatGPT serves millions of Customers
+# How OpenAI scaled PostgreSQL to support ChatGPT
 
-OpenAI solutions are built on PostgreSQL
+PostgreSQL is one of the OpenAIs core data systems
 
 Architecture involves having primary database (PostgreSQL) and also using shared databases for read heavy queries but the primary database options are maximized and the full specifications are leveraged.
 
@@ -25,6 +25,6 @@ The solution implemented to maximize the performance are as follows,
 ## Schema management
   Even slight schema changes can trigger full database rewrite. So only light weight schema changes are done with caution
 
-This is how the OpenAI handles serving customers with primary DB, although its actively working on sharding the complex write operation and working with azure to enhance the performance.
+This is how the OpenAI handles serving customers with primary DB, write-heavy workloads were moving to shared systems such as Cosmos DB; PostgreSQL sharding was not a near-term priority.
   
 
