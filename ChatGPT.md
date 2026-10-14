@@ -1,4 +1,4 @@
-# How OpenAI scaled PostgreSQL to support ChatGPT
+# How OpenAI scaled PostgreSQL to support ChatGPT (As of Jan 2026)
 
 PostgreSQL is one of the OpenAIs core data systems
 
@@ -27,4 +27,5 @@ The solution implemented to maximize the performance are as follows,
 
 This is how the OpenAI handles serving customers with primary DB, write-heavy workloads were moving to shared systems such as Cosmos DB; PostgreSQL sharding was not a near-term priority.
   
+<img width="482" height="291" alt="image" src="https://github.com/user-attachments/assets/eb9c8e9f-a3ec-41e2-b6b2-34abc6810ed6" />
 
